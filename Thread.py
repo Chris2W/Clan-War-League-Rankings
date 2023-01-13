@@ -248,5 +248,5 @@ df.sort_values(['mapPosDiff', 'avgStars', 'warAttackRatio'], ascending=[True, Fa
 df['overall_rank'] = 1
 df['overall_rank'] = df.groupby(['warAttackRatio'])['overall_rank'].cumsum()
 
-df.to_csv(f'CWL_Rankings | {datetime.datetime.now().strftime("%B")} {date.today().year}.csv', encoding='utf-8', index=False)
+df.to_csv(f'CWL_Rankings/CWL_Rankings | {datetime.datetime.now().strftime("%B")} {date.today().year}.csv', encoding='utf-8', index=False)
 print(f"Thread: {time.time() - start_time} seconds")

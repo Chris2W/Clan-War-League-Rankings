@@ -19,5 +19,5 @@ A python script used to identify top fair players in the game Clash of Clans on 
 1. Clash of Clans API (https://developer.clashofclans.com/#/getting-started) provides a multitude of information regarding an individual clan's status in war, capital leagues, clan war leagues, etc.
 
 ## Blockers and how I resolved them
-1. Because of how the JSON data is formatted from the API, and which information I wanted to pull, I had to loop through 28 war_tags (war_tags endpoint returns informaiton about clan war league) 3 different times, then joining them to a list
+1. Because of how the JSON data is formatted from the API, and which information I wanted to pull, I had to loop through 28 war_tags (each war_tag is one request) 3 different times, then joining them to a list
 2. Implemented multithreading processes to reduce reponse time from an average of 45 seconds down to 15 seconds, using 3 threads in total. 

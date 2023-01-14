@@ -1,6 +1,6 @@
 import requests
-import config
 import decimal
+import config
 import pandas as pd
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -235,11 +235,6 @@ def combine():
 
     return new_list
 
-
-    # for i in new_list:
-    #     print(i)
-
-# combine()
 start_time = time.time()
 data = combine()
 
@@ -248,5 +243,5 @@ df.sort_values(['mapPosDiff', 'avgStars', 'warAttackRatio'], ascending=[True, Fa
 df['overall_rank'] = 1
 df['overall_rank'] = df.groupby(['warAttackRatio'])['overall_rank'].cumsum()
 
-df.to_csv(f'CWL_Rankings/CWL_Rankings | {datetime.datetime.now().strftime("%B")} {date.today().year}.csv', encoding='utf-8', index=False)
+df.to_csv(f'CWL_Rankings/ CWL_Rankings | {datetime.datetime.now().strftime("%B")} {date.today().year}.csv', encoding='utf-8', index=False)
 print(f"Thread: {time.time() - start_time} seconds")

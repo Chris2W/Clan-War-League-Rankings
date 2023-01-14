@@ -13,7 +13,7 @@ A python script used to identify top fair players in the game Clash of Clans on 
 4. Currently, it is tedious to track every member of every war and see who is attacking fairly and who isn't, as well as how well they perform on each attack
 
 ## Task
-1. To automate the process of tracking every members' performance and fairness, then creating a ranking system to dictate which 6-8 members deserve extra medals the most
+1. To automate the process of tracking every members' performance and fairness, then creating a ranking system to dictate which 6-8 members deserve extra medals the most on the basis of average stars won, participation ratio, and the difference between a member's map position and their opponent's map position.
 
 ## Action
 1. Clash of Clans API (https://developer.clashofclans.com/#/getting-started) provides a multitude of information regarding an individual clan's status in war, capital leagues, clan war leagues, etc.
